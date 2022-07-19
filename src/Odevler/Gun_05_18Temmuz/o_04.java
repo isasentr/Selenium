@@ -1,6 +1,6 @@
-package Odev;
+package Odevler.Gun_05_18Temmuz;
 
-import Utils_.BaseStaticDriver;
+import Utils.BaseStaticDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

@@ -1,6 +1,6 @@
-package Odev;
+package Odevler.Gun_05_18Temmuz;
 
-import Utils_.BaseStaticDriver;
+import Utils.BaseStaticDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -25,17 +25,17 @@ Not: Bu yazıdaki sayı değişiklik gösterebilir. Önemli olan cümle kalıbı
         WebElement yazdir = driver.findElement(By.cssSelector("div[class='col-xs-14 search-box-wrapper']>input[type='text']"));
         yazdir.sendKeys("teddy bear");
 
-        Bekle(2);
+        Bekle(3);
 
         WebElement Search1= driver.findElement(By.cssSelector("div[class='col-xs-14 search-box-wrapper']>button"));
         Search1.click();
 
-        Bekle(2);
+        Bekle(3);
 
         WebElement esitmi= driver.findElement(By.cssSelector("div[id='searchMessageContainer']>div[class='search-result-txt-section  marT12']>:nth-child(1)"));
         System.out.println(esitmi.getText());
 
-        if (esitmi.getText().contains("We've got 296 results for 'teddy bear'"))
+        if (esitmi.getText().contains("We've got 295 results for 'teddy bear'"))
             System.out.println("Test Passed");
         else
             System.out.println("Test failed");
