@@ -3,12 +3,8 @@ Buradaki ödevler de elemanların LOCATOR larını bulurken,
 elemanın kendisindeki id veya name i kullanmadan (diğerlerindekini kullanabilirsiz bu eleman uşalmak için)
 
 ve sadece XPATH ile bularak çözünüz.
-
-
 1-
-
 /*
-
     1) Bu siteye gidin. ->  http://demoqa.com/text-box
 
     2) Full Name kısmına "Automation" girin.
