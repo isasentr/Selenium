@@ -3,14 +3,21 @@ package Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import java.util.logging.Level;
 
+import java.util.logging.Logger;
 import java.time.Duration;
 
 public class BaseStaticDriver {
 
     public static WebDriver driver;
 
- static{ // burada public static void yazlı idi, bu metodu kullanırken yazmadan direk kullanmak için public ve void sildik. En başta olduğu için bu şkeilde kullanabildik.
+ static{
+     Logger logger = Logger.getLogger("");
+     logger.setLevel(Level.SEVERE);
+
+
+     // burada public static void yazlı idi, bu metodu kullanırken yazmadan direk kullanmak için public ve void sildik. En başta olduğu için bu şkeilde kullanabildik.
      System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");  // run daki ilk 3 satırı gizliyor.
 
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
