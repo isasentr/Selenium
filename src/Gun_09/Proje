@@ -1,0 +1,42 @@
+PROJECT - 2
+NOTE:
+
+Create your own account in the website http://a.testaddressbook.com/sign_in
+manually before you start your automation. I suggest you to use a fake email address.
+This is just for testing.
+
+STEPS:
+1. Navigate to http://a.testaddressbook.com/sign_in
+2. Enter the username and password
+3. Click on sign in button
+4. Click on Addresses
+5. Click on new address button
+6. Enter the first name "Fernando"
+7. Enter the last name "Torres"
+8. Enter the address 1 "Anfield Rd"
+9. Enter the address 2 "Anfield"
+10. Enter the city "Liverpool"
+11. Choose a RANDOM option from the state dropdown
+12. Enter the Zipcode "L4 0TH"
+13. Click on United States
+14. Enter the birthday "20/03/1984"
+15. Enter the age "36"
+16. Enter the WebSite "https://www.google.com/"
+17. Enter the phone "8625747878"
+18. Click on Climbing and Dancing
+19. Enter the Note "Never Back Down"
+20. Click on Create Address button
+21. Verify if the first name is "Fernando"
+22. Verify if the last name is "Torres"
+23. Click on Addresses
+24. Click on Edit button
+25. Change the first name as "Peter"
+26. Change the last name as "Crouch"
+27. Click on Update address
+28. Verify if the first name is "Peter"
+29. Verify if the last name is "Crouch"
+30. Click on Addresses
+31. Click on Destroy
+32. Confirm deleting the address
+33. Verify if the address was removed
+34. Quit the browser
