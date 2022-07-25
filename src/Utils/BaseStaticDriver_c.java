@@ -3,22 +3,16 @@ package Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.logging.Level;
-
-import java.util.logging.Logger;
 import java.time.Duration;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class BaseStaticDriver {
+public class BaseStaticDriver_c {
 
     public static WebDriver driver;
 
-    public static WebDriverWait wait;
-
  static{
-
-     KalanOncekileriKapat();
      Logger logger = Logger.getLogger("");
      logger.setLevel(Level.SEVERE);
 
@@ -31,11 +25,9 @@ public class BaseStaticDriver {
       //  driver.manage().window().maximize(); //max
         driver.manage().deleteAllCookies();
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-
-//     Duration dr= Duration.ofSeconds(30);
-     driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); //sadece ana sayfa yüklenirken eb başta
-     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); //bütün webelement için geçerli
+     Duration dr= Duration.ofSeconds(30);
+     driver.manage().timeouts().pageLoadTimeout(dr); //sadece ana sayfa yüklenirken eb başta
+     driver.manage().timeouts().implicitlyWait(dr); //bütün webelement için geçerli
     }
 
     public static void BekleKapat() {
@@ -56,13 +48,4 @@ public class BaseStaticDriver {
         }
 
     }
-
-    public static void KalanOncekileriKapat() {
-
-        try {
-            Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
-        } catch (Exception ignored) {
-
-        }
-    }
-    }
+}
