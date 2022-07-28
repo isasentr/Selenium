@@ -32,5 +32,7 @@ public class _07_Soru extends BaseStaticDriver {
 
         Bekle(2);
         System.out.println("Başlık="+linkler.get(80).getAttribute("ariaLabel"));
+
+        BekleKapat();
     }
 }
