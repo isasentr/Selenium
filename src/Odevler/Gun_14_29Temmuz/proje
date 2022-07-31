@@ -1,0 +1,46 @@
+PROJECT - 3
+E-junkie Web Automation (Automate Following Test Scenarios)
+SCENARIO 1:
+-Navigate to "https://shopdemo.e-junkie.com/”
+-Click on 'Add to Cart' for 'Demo eBook'
+-Validate cart item no is '1'
+-Click on 'Remove' button to remove item from your cart
+-Click on 'Continue Shopping'
+-Validate cart item no is '0'
+
+
+SCENARIO 2:
+-Navigate to "https://shopdemo.e-junkie.com/" website
+-Click on 'Add to Cart' for 'Demo eBook'
+
+-Click on 'Add Promo Code' button and enter "123456789"
+-Click on 'Apply'
+-Validate "Invalid promo code" message is displayed!
+
+
+SCENARIO 3:
+-Navigate to "https://shopdemo.e-junkie.com/" website
+-Click on 'Add to Cart' for 'Demo eBook'
+-Click on 'Pay using Debit Card'
+-Click on 'Pay' button without filling any information
+-Validate "Invalid Email - Invalid Email - Invalid Billing Name" message is displayed!
+
+
+SCENARIO 4:
+-Navigate to "https://shopdemo.e-junkie.com/" website
+-Click on 'Add to Cart' for 'Demo eBook'
+-Click on 'Pay using Debit Card'
+-Fill the Billing Details Form (use fake data)
+-Enter Card number as "1111 1111 1111 1111"
+-Validate "Invalid Card Number" message is displayed!
+
+
+SCENARIO 5:
+-Navigate to "https://shopdemo.e-junkie.com/" website
+-Click on 'Add to Cart' for 'Demo eBook'
+-Click on 'Pay using Debit Card'
+-Fill the Billing Details Form (use fake data)
+-Enter Card number as "4242 4242 4242 4242"
+-Enter Expiration as "12/22" and CVV as "000"
+-Click on 'Pay' button
+-Validate you navigate to the confirmation page and "Thank you!" message is displayed!
