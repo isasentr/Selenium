@@ -1,0 +1,27 @@
+PROJECT - 3
+This project is testing the http://demowebshop.tricentis.com/
+• There are 2 functionalities you should be testing.
+• Test these 2 functionalities with Selenium and Java.
+• Use explicit wait as much as you can!
+Try to not use Thread.sleep.(You will need a lot of waits for this website!
+BE CAREFUL :))
+• Pre-Condition: Create an account on the page before starting to automate and
+use that account for automation.
+Automate Following Test Scenarios
+
+SCENARIO 1 | Login Functionality Test - Positive Scenario:
+-You should navigate to the Login page and try to login with valid credentials.
+-Expected Result is successfully login!
+
+SCENARIO 2 | Login Functionality Test - Negative Scenario:
+-You should navigate to the Login page and try to login with invalid credentials.
+-Expected Result is “Login was unsuccessful. Please correct the errors and try again.
+● No customer account found” message should be displayed. Validate this message is
+displayed and validate text.
+
+SCENARIO 3 - Place an Order:
+-You should navigate to the website and login to your account.
+-You should select a product from HomePage and add to cart
+-You should complete proceed to checkout process
+-At the end you should verify the following success message! “Your order has been successfully
+processed!
